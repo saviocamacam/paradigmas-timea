@@ -36,9 +36,9 @@
     existingDF
   }
   
-  setwd("C:/Users/savio/Google Drive/estudo/PD360_paradigmas_programacao_paralela/pd36o-aula-011-pratica-for-scheduling-cod/src/codigo-suporte");
+  setwd("/home/todos/alunos/cm/a1648160/git/timea/codigo-suporte/");
   
-  data = read.csv("C:/Users/savio/Google Drive/estudo/PD360_paradigmas_programacao_paralela/pd36o-aula-011-pratica-for-scheduling-cod/src/codigo-suporte/final.csv");
+  data = read.csv("/home/todos/alunos/cm/a1648160/git/timea/codigo-suporte/final.csv");
   View(data)
   
   cdata1 <- ddply(data, c("exp","version", "schedule" , "chunk_size" , "num_threads" ,  "size_of_data"), summarise,

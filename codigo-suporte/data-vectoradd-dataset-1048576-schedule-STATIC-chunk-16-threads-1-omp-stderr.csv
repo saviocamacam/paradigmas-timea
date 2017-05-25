@@ -1,10 +1,60 @@
-Experiment 'schedule-test', execution 1 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 24/05/2017-07:01:05
-Experiment 'schedule-test', execution 2 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 24/05/2017-07:01:05
-Experiment 'schedule-test', execution 3 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 24/05/2017-07:01:05
-Experiment 'schedule-test', execution 4 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 24/05/2017-07:01:05
-Experiment 'schedule-test', execution 5 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 24/05/2017-07:01:05
-Experiment 'schedule-test', execution 6 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 24/05/2017-07:01:05
-Experiment 'schedule-test', execution 7 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 24/05/2017-07:01:05
-Experiment 'schedule-test', execution 8 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 24/05/2017-07:01:06
-Experiment 'schedule-test', execution 9 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 24/05/2017-07:01:06
-Experiment 'schedule-test', execution 10 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 24/05/2017-07:01:06
+Experiment 'schedule-test', execution 1 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:25:28
+Uso: taskset [opções] [máscara | lista-cpu] [pid|comando [argumentos...]]
+
+
+Show or change the CPU affinity of a process.
+
+Opções:
+ -a, --all-tasks         opera em todas as tarefas (threads) para um pid dado
+ -p, --pid               opera em um dado pid existente
+ -c, --cpu-list          exibe e especifica cpus em um formato de lista
+ -h, --help              exibe esta ajuda
+ -V, --version           exibe informação da versão
+
+O comportamento padrão é executar um novo comando:
+    taskset 03 sshd -b 1024
+Você pode obter a máscara de uma tarefa existente:
+    taskset -p 700
+Ou defini-la:
+    taskset -p 03 700
+Formato lista usa uma lista separa por vírgula em vez de uma máscara:
+    taskset -pc 0,3,7-11 700
+Faixas no formato lista pode levar um argumento amplo:
+    ex.: 0-31:2 é equivalente à máscara 0x55555555
+
+Para mais detalhes, veja taskset(1).
+Experiment 'schedule-test', execution 1 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:27:02
+Uso: taskset [opções] [máscara | lista-cpu] [pid|comando [argumentos...]]
+
+
+Show or change the CPU affinity of a process.
+
+Opções:
+ -a, --all-tasks         opera em todas as tarefas (threads) para um pid dado
+ -p, --pid               opera em um dado pid existente
+ -c, --cpu-list          exibe e especifica cpus em um formato de lista
+ -h, --help              exibe esta ajuda
+ -V, --version           exibe informação da versão
+
+O comportamento padrão é executar um novo comando:
+    taskset 03 sshd -b 1024
+Você pode obter a máscara de uma tarefa existente:
+    taskset -p 700
+Ou defini-la:
+    taskset -p 03 700
+Formato lista usa uma lista separa por vírgula em vez de uma máscara:
+    taskset -pc 0,3,7-11 700
+Faixas no formato lista pode levar um argumento amplo:
+    ex.: 0-31:2 é equivalente à máscara 0x55555555
+
+Para mais detalhes, veja taskset(1).
+Experiment 'schedule-test', execution 1 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:27:16
+Experiment 'schedule-test', execution 2 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:27:16
+Experiment 'schedule-test', execution 3 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:27:16
+Experiment 'schedule-test', execution 4 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:27:16
+Experiment 'schedule-test', execution 5 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:27:16
+Experiment 'schedule-test', execution 6 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:27:16
+Experiment 'schedule-test', execution 7 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:27:16
+Experiment 'schedule-test', execution 8 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:27:16
+Experiment 'schedule-test', execution 9 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:27:16
+Experiment 'schedule-test', execution 10 of vectoradd with dataset: 1048576, schedule: STATIC, chunk_size: 16, threads: 1 start at 25/05/2017-14:27:16
