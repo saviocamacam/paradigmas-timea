@@ -1,0 +1,6 @@
+ #pragma omp parallel num_threads(OPENMP_NUM_THREADS)
+  {
+  	#pragma omp for schedule(OPENMP_SCHEDULE_WITH_CHUNK)
+    for(...){...}
+  }
+
